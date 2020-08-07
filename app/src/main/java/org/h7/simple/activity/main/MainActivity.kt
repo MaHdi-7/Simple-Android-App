@@ -35,6 +35,8 @@ abstract class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        AppCenter.start(getApplication(), "e696dc97-731a-4246-b0a1-6ccd6e238db7",
+                  Analytics.class, Crashes.class);
         val binding : ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         modelNavigation = getNavViewModel()
         binding.footer = modelNavigation.getMenuFooter(this)
