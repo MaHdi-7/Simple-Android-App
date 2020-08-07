@@ -22,6 +22,9 @@ import org.h7.simple.data.menu.MenuItem
 import org.h7.simple.data.menu.OnMenuClickListener
 import org.h7.simple.databinding.ActivityMainBinding
 import org.h7.simple.widget.EndDrawerToggle
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
 
 
 abstract class MainActivity : AppCompatActivity() {
